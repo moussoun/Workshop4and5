@@ -1,26 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-var initialData = {// The "user" collection. Contains all of the users in our Facebook system. "users": {
-    // This user has id "1".
+var initialData = {// The "user" collection. Contains all of the users in our Facebook system.
+  "users": {// This user has id "1".
     "1": {
       "_id": 1,
       "fullName": "Someone",
       "feed": 1
-}, "2": {
+    },
+
+    "2": {
       "_id": 2,
       "fullName": "Someone Else",
       "feed": 2
-}, "3": {
+      },
+
+      "3": {
       "_id": 3,
       "fullName": "Another Person",
       "feed": 3
-},
-    // This is "you"!
-"4": {
-"_id": 4,
-"fullName": "John Vilk", // ID of your feed. "feed": 4
-} },
+      },
+
+      // This is "you"!
+      "4": {
+      "_id": 4,
+      "fullName": "John Vilk" // ID of your feed. "feed": 4
+      }
+    },
 // The 'feedItems' collection. Contains all of the feed items on our Facebook // system.
 "feedItems": {
 "1": {
@@ -65,7 +71,7 @@ var initialData = {// The "user" collection. Contains all of the users in our Fa
 "_id": 1,
       "contents": []
     }
-} };
+  }
 };
 
 var data = JSON.parse(localStorage.getItem('facebook_data'));

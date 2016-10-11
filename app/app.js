@@ -151,6 +151,6 @@ class Feed extends React.Component {
 }
 
 ReactDOM.render(
-  <Feed />,
+  <Feed user={4} />,
   document.getElementById('fb-feed')
 );
